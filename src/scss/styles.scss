@@ -1,7 +1,18 @@
 @import './header.scss';
+@import './hero.scss';
+@import './about.scss';
+@import './tracks.scss';
+@import './mentors.scss';
+@import './workshops.scss';
+@import './features.scss';
+@import './testimonials.scss';
+@import './resources.scss';
+@import './pricing.scss';
+@import './b2b.scss';
+@import './faq.scss';
+@import './contact.scss';
 @import './footer.scss';
 @import './cpt.scss';
-
 
 .container {
   max-width: 375px;
@@ -14,4 +25,15 @@
     padding-left: 120px;
     padding-right: 120px;
   }
+}
+
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
