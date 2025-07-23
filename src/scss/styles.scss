@@ -19,7 +19,7 @@
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-
+  background-color: #1E1F25;
   @include media(desktop) {
     max-width: 1440px;
     padding-left: 120px;
@@ -36,4 +36,5 @@ h2 {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  background: #1E1E1E;
 }

@@ -1,0 +1,99 @@
+/* Workshops & Webinars – мобильные стили */
+.workshops-content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 80px;
+
+  @include media(desktop) {
+    /* десктоп‑правки добавим позже */
+  }
+}
+
+.workshops-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.workshops-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+
+.workshop-list-item {
+  background: #262334;
+  outline: 2px solid #262334;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 343px;
+  @include media(desktop) {
+    height: 360px;
+    max-width: 223px;
+  }
+}
+
+.workshop-list-item img {
+    width: 100%;
+  height: auto;
+  display: block;
+  @include media(desktop) {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+.workshop-list-item p {
+  padding: 8px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.5;
+  word-wrap: break-word;
+  @include media(desktop) {
+    width: 100%;
+    height: 92px;
+    padding: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+}
