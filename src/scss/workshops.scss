@@ -38,6 +38,8 @@
 }
 
 .workshops-list {
+  padding-left: 16px;
+  padding-right: 16px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -64,7 +66,7 @@
   max-width: 343px;
   @include media(desktop) {
     height: 360px;
-    max-width: 223px;
+    max-width: 224px;
   }
 }
 
