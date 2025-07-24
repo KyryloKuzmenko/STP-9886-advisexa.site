@@ -1,0 +1,111 @@
+/* B2B Section – мобильные стили */
+.b2b-content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 80px;
+
+  @include media(desktop) {
+    gap: 56px;
+    padding-bottom: 120px;
+  }
+}
+
+.b2b-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    width: 764px;
+    gap: 16px;
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+  line-height: 1.2;
+
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.section-subtitle {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-top: 12px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    font-weight: 300;
+  }
+}
+
+.b2b-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 83px;
+    margin-top: 50px;
+  }
+}
+
+.b2b-image {
+  width: 343px;
+  height: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 20px 0;
+  max-width: none;
+  @include media(desktop) {
+    width: 407px;
+    height: 249px;
+    margin: 0;
+  }
+}
+
+.b2b-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  max-width: 343px;
+
+  @include media(desktop) {
+    max-width: 710px;
+    gap: 48px;
+  }
+}
+
+.b2b-text p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.5;
+  word-wrap: break-word;
+
+  @include media(desktop) {
+    width: 710px;
+  }
+}
+
+.b2b-text .primary-button {
+  font-size: 20px;
+
+  @include media(desktop) {
+    
+  }
+}

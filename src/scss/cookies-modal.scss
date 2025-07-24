@@ -1,0 +1,111 @@
+.cookie-modal {
+  display: none;               
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  z-index: 9998;
+}
+
+.cookie-modal .cookies-wrap {
+  position: fixed;             
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;               
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+
+  border-radius: 4px;
+  padding: 24px 16px;
+  width: 288px;
+  height: 381px;
+  background: #1e1f25;
+
+  @include media(desktop) {
+    width: 567px;
+    height: 279px;
+    align-items: flex-start;
+  }
+}
+
+.cookies-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.cookies-modal-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 12px;
+  @include media(desktop) {
+    margin-top: 24px;
+  }
+}
+
+.cookies-btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 24px;
+  @include media(desktop) {
+    flex-direction: row;
+    margin-top: 32px;
+  }
+}
+
+.cookies-accept {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 32px;
+  padding: 16px 24px;
+  width: 239px;
+  height: 56px;
+  background: #002eb0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  @include media(desktop) {
+    width: 244px;
+    height: 64px;
+  }
+}
+
+.cookies-decline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: 2px solid #002eb0;
+  border-radius: 32px;
+  padding: 16px 24px;
+  width: 239px;
+  height: 48px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #002eb0;
+  white-space: nowrap;
+  @include media(desktop) {
+    width: 255px;
+    height: 64px;
+  }
+}
